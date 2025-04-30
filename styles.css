@@ -35,7 +35,7 @@ https://www.transparenttextures.com/
 body {
   color: var(--licorice);
   background-color: var(--background);
-  background-image: url('Assets/brick.png');
+  background-image: url('./Assets/brick.png');
   background-repeat: repeat;
   background-size: auto;
   font-family: 'Fox', sans-serif;
@@ -133,7 +133,7 @@ a {
   padding: 2vw;
   box-sizing: border-box;
   background-color: var(--background);
-  background-image: url('Assets/brick.png');
+  background-image: url('./Assets/brick.png');
   background-repeat: repeat;
 }
 
@@ -230,11 +230,11 @@ a {
 .masked-image {
   height: 700px;
   object-fit: cover;
-  -webkit-mask-image: url('Assets/stroke.png');
+  -webkit-mask-image: url('./Assets/stroke.png');
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
   -webkit-mask-position: center;
-  mask-image: url('Assets/stroke.png');
+  mask-image: url('./Assets/stroke.png');
   mask-repeat: no-repeat;
   mask-size: contain;
   mask-position: center;
