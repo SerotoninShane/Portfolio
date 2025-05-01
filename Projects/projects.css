@@ -79,7 +79,6 @@ header {
   transition: .25s;
   opacity: 1;
 }
-
 .hero span {
   font-size: 14px;
 }
@@ -98,6 +97,7 @@ a {
   list-style: none;
 }
 
+
 .nav-link {
   padding: .75rem;
   margin: .5rem;
@@ -112,6 +112,12 @@ a {
   opacity: 1;
   transform: scale(1.05);
   cursor: pointer;
+}
+
+.selected {
+  border-radius: 1rem;
+  background-color: var(--licorice);
+  color: white;
 }
 
 footer {
@@ -197,7 +203,7 @@ footer {
   object-fit: cover;
   border-radius: 0.5rem;
   z-index: 10;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .project-number {
@@ -213,15 +219,14 @@ footer {
 }
 
 .project-details {
-  padding-inline: 1vw;
-  padding-block: 1rem;
-  padding: 1rem;
+  padding: 2rem;
   flex: 1 1 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: white;
   border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .project-details h2 {
@@ -248,9 +253,9 @@ footer {
 .project-techs span {
   background: #ebf8ff;
   color: var(--light);
-  padding: 0.5rem 1rem;
-  border-radius: 9999px;
-  font-size: 0.875rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: .8rem;
   font-weight: 500;
 }
 

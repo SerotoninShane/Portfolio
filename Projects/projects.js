@@ -17,7 +17,8 @@ async function fetchProjectData(repo) {
       title: repo.name,
       description: repo.description || "No description provided.",
       technologies: meta.technologies || [],
-      image: imageUrl
+      image: imageUrl,
+      website: meta.website || `https://${username}.github.io/${repo.name}`
     };
   } catch (err) {
     console.warn(`⚠️ Skipping ${repo.name}: ${err.message}`);
@@ -77,6 +78,15 @@ function renderProject() {
     });
     indicators.appendChild(dot);
   });
+
+  const websiteLink = document.getElementById("website-link");
+  const sourceLink = document.getElementById("source-link");
+
+  websiteLink.href = project.website;
+  websiteLink.target = "_blank";
+
+  sourceLink.href = `https://github.com/${username}/${project.title}`;
+  sourceLink.target = "_blank";
 }
 
 function navigateProject(direction) {

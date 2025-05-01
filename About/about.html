@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SerotoninShane's GitHub Repos</title>
+  <link rel="stylesheet" href="about.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Merriweather:wght@400;700&display=swap"
+  
+</head>
+<body>
+  <header>
+    <div class="wrapper flex">
+      <a class="hero flex" href="../index.html">Shane Bogue<span>Portfolio</span></a>
+      <div class="nav flex">
+        <a class="nav-link" href="../About/about.html">About</a>
+        <a class="nav-link selected" href="">Projects</a>
+        <a class="nav-link contact" id="modalBtn">Contact</a>
+      </div>
+    </div>
+  </header>
+  <div class="projects-page">
+    
+    <div class="project-container">
+      <button class="nav-arrow left" onclick="navigateProject('prev')">
+        ◀
+      </button>
+      <div class="project-card">
+        <div class="project-image-wrapper">
+          <img id="project-image" src="/api/placeholder/600/400" alt="Project Image" />
+          <div class="project-number" id="project-number">#1</div>
+        </div>
+
+        <div class="project-details">
+          <h2 id="project-title">Project Title</h2>
+          <p id="project-description">Description here...</p>
+          <div>
+          <div id="project-techs" class="project-techs"></div>
+
+          <div class="project-buttons">
+            <a class="btn primary" id="website-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg> Website
+            </a>
+            <a class="btn secondary" id="source-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg> Source Code
+            </a>
+          </div>
+
+        </div>
+
+          <div class="project-indicators" id="project-indicators"></div>
+        </div>
+      </div>
+
+      <button class="nav-arrow right" onclick="navigateProject('next')">
+        ▶
+      </button>
+    </div>
+  </div>
+  <footer>
+    @Shane Bogue 2025
+  </footer>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p>Modal Header</p>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <!-- Form content here -->
+        <label for="name">Name</label>
+        <input type="text" id="name" class="text-field">
+        
+        <label for="message">Message</label>
+        <textarea id="message" class="text-field message"></textarea>
+  
+        <button class="FormButton">Submit</button>
+      </div>
+      <div class="modal-footer">
+        <p>Modal Footer</p>
+      </div>
+    </div>
+  </div>
+  <script src="about.js"></script>
+</body>
+</html>
